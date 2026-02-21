@@ -52,25 +52,22 @@
 
 [coverage-url]: https://coveralls.io/github/IT-Service-NPM/remark-gfm-admonition?branch=main
 
-This plugin add ability read GutHub admonitions from markdown and write it to markdown.
+This plugin extends Remark’s functionality,
+enabling it to read GitHub admonitions from Markdown
+and write them back to Markdown files.
 
-> \[!IMPORTANT]
->
-> [`remark-directive`][] plugin expected before
-> `@it-service-npm/remark-gfm-admonition`.
->
-> This package provides two plugins presets:
->
-> - `remarkIncludePreset`. This preset contains:
->
->   - `remarkInclude`
->   - `remarkDirective`
-> - `remarkIncludePresetSync`. This preset contains:
->
->   - `remarkIncludeSync`
->   - `remarkDirective`
+> [!IMPORTANT]
+> [`remark-directive`](https://www.npmjs.com/package/remark-directive)
+> plugin expected
+> and [`remark-github-admonitions-to-directives`](https://www.npmjs.com/package/remark-github-admonitions-to-directives).
 
-[`remark-directive`]: https://www.npmjs.com/package/remark-directive
+> [!TIP]
+> This package provides plugin and preset with expected plugins:
+>
+> - `remarkGithubAdmonitionsPreset`. This preset contains:
+>   - `remarkDirective`
+>   - `remarkGithubAdmonitionsToDirectives`
+>   - `remarkGithubAdmonitions`
 
 ## Install
 
@@ -82,10 +79,12 @@ npm install --save-dev @it-service-npm/remark-gfm-admonition
 
 ### Write GutHub admonitions to markdown
 
-Remark write write broken markdown file with GutHub admonitions.
+Remark write broken markdown file with GutHub admonitions.
 
-`@it-service-npm/remark-gfm-admonition` add Remark ability
-read GutHub admonitions from markdown and write it to markdown.
+`@it-service-npm/remark-gfm-admonition`
+extends Remark’s functionality,
+enabling it to read GitHub admonitions from Markdown
+and write them back to Markdown files
 
 ```typescript file=test/examples/01/example.ts
 import { remark } from 'remark';

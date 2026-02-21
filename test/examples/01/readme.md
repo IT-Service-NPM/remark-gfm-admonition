@@ -1,9 +1,11 @@
 # Write GutHub admonitions to markdown
 
-Remark write write broken markdown file with GutHub admonitions.
+Remark write broken markdown file with GutHub admonitions.
 
-`@it-service-npm/remark-gfm-admonition` add Remark ability
-read GutHub admonitions from markdown and write it to markdown.
+`@it-service-npm/remark-gfm-admonition`
+extends Remark’s functionality,
+enabling it to read GitHub admonitions from Markdown
+and write them back to Markdown files
 
 ```typescript file=./example.ts
 import { remark } from 'remark';

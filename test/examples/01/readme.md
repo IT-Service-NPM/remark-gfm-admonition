@@ -21,7 +21,6 @@ export async function remarkUsingExample(
     .use(remarkGithubAdmonitionsPreset)
     .process(await read(filePath));
 };
-
 ```
 
 Source files:
@@ -64,7 +63,6 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```
 
 Remark output:
@@ -105,7 +103,6 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```
 
 Remark output without plugin:
@@ -146,5 +143,4 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```

@@ -228,7 +228,7 @@ Text after GitHub admonitions.
 
 ```
 
-### Write GutHub admonitions to markdown
+### Convert directives to GutHub admonitions
 
 Remark writes broken markdown file with GutHub admonitions.
 
@@ -242,7 +242,7 @@ Source files:
 directives.md:
 
 ```markdown file=test/examples/02/fixtures/directives.md
-# markdown file with GitHub admonitions and other directives
+# markdown file with GitHub admonitions directives
 
 Text before.
 
@@ -273,7 +273,7 @@ Text after.
 unknown-directives.md:
 
 ```markdown file=test/examples/02/fixtures/unknown-directives.md
-# markdown file with GitHub admonitions and other directives
+# markdown file with other directives
 
 Text before.
 
@@ -288,7 +288,7 @@ Text after.
 Remark output:
 
 ```markdown file=test/examples/02/snapshots/directives.md
-# markdown file with GitHub admonitions and other directives
+# markdown file with GitHub admonitions directives
 
 Text before.
 
@@ -312,7 +312,7 @@ Text after.
 ```
 
 ```markdown file=test/examples/02/snapshots/unknown-directives.md
-# markdown file with GitHub admonitions and other directives
+# markdown file with other directives
 
 Text before.
 

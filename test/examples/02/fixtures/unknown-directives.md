@@ -1,4 +1,4 @@
-# markdown file with GitHub admonitions and other directives
+# markdown file with other directives
 
 Text before.
 

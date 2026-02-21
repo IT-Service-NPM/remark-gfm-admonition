@@ -37,7 +37,6 @@ Danger example from directive.
 :::
 
 Text after.
-
 ```
 
 unknown-directives.md:
@@ -52,7 +51,6 @@ Unknown directive example.
 :::
 
 Text after.
-
 ```
 
 Remark output:
@@ -78,7 +76,6 @@ Text before.
 > Danger example from directive.
 
 Text after.
-
 ```
 
 ```markdown file=./snapshots/unknown-directives.md
@@ -91,5 +88,4 @@ Unknown directive example.
 :::
 
 Text after.
-
 ```

@@ -54,7 +54,7 @@
 
 This plugin extends Remark’s functionality,
 enabling it to read GitHub admonitions from Markdown
-and write them back to Markdown files.
+and to write them back to Markdown files.
 
 > [!IMPORTANT]
 > [`remark-directive`](https://www.npmjs.com/package/remark-directive)
@@ -79,12 +79,12 @@ npm install --save-dev @it-service-npm/remark-gfm-admonition
 
 ### Write GutHub admonitions to markdown
 
-Remark write broken markdown file with GutHub admonitions.
+Remark writes broken markdown file with GutHub admonitions.
 
 `@it-service-npm/remark-gfm-admonition`
 extends Remark’s functionality,
 enabling it to read GitHub admonitions from Markdown
-and write them back to Markdown files
+and to write them back to Markdown files
 
 ```typescript file=test/examples/01/example.ts
 import { remark } from 'remark';

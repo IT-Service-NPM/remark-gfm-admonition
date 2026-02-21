@@ -28,5 +28,16 @@ With this Remark plugin [Remark](https://www.npmjs.com/package/remark) can read 
 
 
 </td></tr>
+<tr><td>
+
+[@it-service-npm/remark-gfm-admonitions](./remark-gfm-admonitions.md)
+
+
+</td><td>
+
+With this Remark plugin [Remark](https://www.npmjs.com/package/remark) can read GutHub admonitions from markdown and write it to markdown without changes.
+
+
+</td></tr>
 </tbody></table>
 

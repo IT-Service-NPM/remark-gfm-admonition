@@ -5,7 +5,7 @@ Remark writes broken markdown file with GutHub admonitions.
 `@it-service-npm/remark-gfm-admonition`
 extends Remark’s functionality,
 enabling it to read GitHub admonitions from Markdown
-and to write them back to Markdown files
+and to write them back to Markdown files.
 
 ```typescript file=./example.ts
 import { remark } from 'remark';

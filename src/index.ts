@@ -26,6 +26,7 @@ import remarkGithubAdmonitionsToDirectives, {
   GithubAlertType,
   DirectiveName
 } from 'remark-github-admonitions-to-directives';
+import { $enum } from 'ts-enum-util';
 
 let handleDirectiveToMarkdownFallback: ToMarkdownHandle | undefined;
 
@@ -55,13 +56,13 @@ export function handleGithubAdmonitionDirective(
   state: State,
   info: Info
 ): string {
-  if (Object.keys(GithubAlertType).includes(node.name)) {
+  const directiveName = $enum(DirectiveName).asValueOrDefault(node.name);
+  if (typeof directiveName === 'undefined') {
     return handleDirectiveToMarkdownFallback!(node, parent, state, info);
   } else {
     const tracker = state.createTracker(info);
     const exit = state.enter(node.type);
 
-    const directiveName: DirectiveName = node.name as DirectiveName;
     const githubAlertType: GithubAlertType =
       DirectiveName2GithubAlertType[directiveName];
     let value: string = tracker.move(`> [!${githubAlertType}]\n`);
@@ -74,9 +75,6 @@ export function handleGithubAdmonitionDirective(
     exit();
     return value;
   };
-
-
-
 };
 
 /**

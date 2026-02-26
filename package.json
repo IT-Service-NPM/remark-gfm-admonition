@@ -41,7 +41,8 @@
 		"CI": "npm run build && npm run lint && npm run test && npm run update-readme-API && npm run update-readme",
 		"check-exports": "attw --pack .",
 		"lint": "tsc && eslint",
-		"test": "vitest run --coverage",
+		"test": "node --import tsx --experimental-transform-types --experimental-test-module-mocks --experimental-test-coverage --test-reporter=spec --test-reporter=junit --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=test/results/junit-report.xml --test-reporter-destination=coverage/lcov.info --test",
+		"update-test-snapshots": "node --import tsx --experimental-transform-types --experimental-test-module-mocks --test-update-snapshots --test",
 		"update-readme-API": "npx api-extractor run --local && npx api-documenter markdown -i ./temp -o ./docs",
 		"update-examples-readme": "remark test/examples/*/readme.md --output",
 		"update-main-readme": "remark .readme.md --output README.md",
@@ -53,17 +54,15 @@
 		"remark": "^15.0.1",
 		"remark-directive": "^4.0.0",
 		"remark-github-admonitions-to-directives": "^2.1.0",
-		"remark-stringify": "^11.0.0",
 		"ts-enum-util": "^4.1.0"
 	},
 	"devDependencies": {
-		"@altano/vitest-plugins": "^1.1.1",
 		"@commitlint/cli": "^20.3.0",
 		"@commitlint/config-angular": "^20.3.0",
 		"@commitlint/config-conventional": "^20.3.0",
 		"@commitlint/types": "^20.2.0",
 		"@eslint/js": "^9.39.2",
-		"@it-service-npm/remark-include": "^4.2.0",
+		"@it-service-npm/remark-include": "^5.0.0",
 		"@microsoft/api-documenter": "^7.26.0",
 		"@microsoft/api-extractor": "^7.48.0",
 		"@semantic-release/changelog": "^6.0.3",
@@ -78,8 +77,6 @@
 		"@types/relateurl": "^0.2.33",
 		"@typescript-eslint/eslint-plugin": "^8.56.0",
 		"@typescript-eslint/parser": "^8.56.0",
-		"@vitest/coverage-istanbul": "^4.0.16",
-		"@vitest/eslint-plugin": "^1.6.8",
 		"conventional-changelog-cli": "^4.1.0",
 		"eslint": "^10.0.0",
 		"eslint-config-prettier": "^10.1.8",
@@ -102,11 +99,10 @@
 		"remark-validate-links": "^13.0.2",
 		"semantic-release": "^25.0.2",
 		"tsdoc-markdown": "^1.0.0",
+		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.56.0",
 		"unified": "^11.0.5",
-		"vfile": "^6.0.3",
-		"vite-plugin-vitest-typescript-assert": "^1.1.4",
-		"vitest": "^4.0.18"
+		"vfile": "^6.0.3"
 	}
 }

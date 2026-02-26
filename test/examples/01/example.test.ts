@@ -1,30 +1,32 @@
+import { test } from 'node:test';
 import path from 'node:path';
 import { remark } from 'remark';
 import { read } from 'to-vfile';
 import { remarkUsingExample } from './example.ts';
 
-const testSourceFilesPath: string = path.join(__dirname, 'fixtures');
-const testMainSourceFilePath: string =
-  path.join(testSourceFilesPath, 'main.md');
-
-describe('remark without remark-gfm-admonition', () => {
-
-  it('write broken GutHub admonitions', async () => {
+// eslint-disable-next-line max-len
+await test('Remark without \'remark-gfm-admonition\' writes broken GutHub admonitions',
+  async (t) => {
     const outputFile = await remark()
-      .process(await read(testMainSourceFilePath));
-    await expect(String(outputFile))
-      .toMatchFileSnapshot(path.join(testSourceFilesPath, 'broken.md'));
+      .process(await read(path.resolve(
+        import.meta.dirname, 'fixtures', 'main.md'
+      )));
+    t.assert.fileSnapshot(
+      String(outputFile),
+      path.resolve(import.meta.dirname, 'fixtures', 'broken.md'),
+      { serializers: [(data: string) => data] }
+    );
   });
 
-});
-
-describe('remark-gfm-admonition', () => {
-
-  it('read and write GutHub admonitions without changes', async () => {
-    const outputFile = await remarkUsingExample(testMainSourceFilePath);
-
-    await expect(String(outputFile))
-      .toMatchFileSnapshot(testMainSourceFilePath);
+// eslint-disable-next-line max-len
+await test('Remark with \'remark-gfm-admonition\' reads and writes GutHub admonitions without changes',
+  async (t) => {
+    const outputFile = await remarkUsingExample(path.resolve(
+      import.meta.dirname, 'fixtures', 'main.md'
+    ));
+    t.assert.fileSnapshot(
+      String(outputFile),
+      path.resolve(import.meta.dirname, 'fixtures', 'main.md'),
+      { serializers: [(data: string) => data] }
+    );
   });
-
-});

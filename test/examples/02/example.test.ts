@@ -1,33 +1,29 @@
+import { test } from 'node:test';
 import path from 'node:path';
 import { remarkUsingExample } from './example.ts';
 
-const testSourceFilesPath: string = path.join(__dirname, 'fixtures');
-const testSnapshotFilesPath: string = path.join(__dirname, 'snapshots');
+// eslint-disable-next-line max-len
+await test('`remarkGithubAdmonitionsPreset` writes directives as GutHub admonitions',
+  async (t) => {
+    const outputFile = await remarkUsingExample(path.resolve(
+      import.meta.dirname, 'fixtures', 'directives.md'
+    ));
+    t.assert.fileSnapshot(
+      String(outputFile),
+      path.resolve(import.meta.dirname, 'snapshots', 'directives.md'),
+      { serializers: [(data: string) => data] }
+    );
+  });
 
-describe('remark-gfm-admonition', () => {
-
-  it('convert directive from source file writes GutHub admonitions',
-    async () => {
-      const outputFile = await remarkUsingExample(
-        path.join(testSourceFilesPath, 'directives.md')
-      );
-
-      await expect(String(outputFile))
-        .toMatchFileSnapshot(
-          path.join(testSnapshotFilesPath, 'directives.md')
-        );
-    });
-
-  it('reads unknown directives and writes them without changes',
-    async () => {
-      const outputFile = await remarkUsingExample(
-        path.join(testSourceFilesPath, 'unknown-directives.md')
-      );
-
-      await expect(String(outputFile))
-        .toMatchFileSnapshot(
-          path.join(testSnapshotFilesPath, 'unknown-directives.md')
-        );
-    });
-
-});
+// eslint-disable-next-line max-len
+await test('`remarkGithubAdmonitionsPreset` reads unknown directives and writes them without changes',
+  async (t) => {
+    const outputFile = await remarkUsingExample(path.resolve(
+      import.meta.dirname, 'fixtures', 'unknown-directives.md'
+    ));
+    t.assert.fileSnapshot(
+      String(outputFile),
+      path.resolve(import.meta.dirname, 'snapshots', 'unknown-directives.md'),
+      { serializers: [(data: string) => data] }
+    );
+  });

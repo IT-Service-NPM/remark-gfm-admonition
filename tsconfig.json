@@ -10,7 +10,6 @@
 		}
 	],
 	"compilerOptions": {
-		"tsBuildInfoFile": "./temp/tsconfig.tsbuildinfo",
 		"noEmit": true,
 		"allowImportingTsExtensions": true,
 		"esModuleInterop": true,
@@ -38,12 +37,7 @@
 		"paths": {
 			"@it-service-npm/remark-gfm-admonition": [
 				"./dist"
-			],
-		},
-		"types": [
-			"node",
-			"vitest/globals",
-			"@altano/vitest-plugins/matchers"
-		],
-	}
+			]
+		}
+	},
 }

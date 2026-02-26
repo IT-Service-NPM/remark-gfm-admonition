@@ -1,8 +1,9 @@
 /**
- * With this Remark plugin
+ * This plugin extends
  * {@link https://www.npmjs.com/package/remark| Remark}
- * can read GutHub admonitions
- * from markdown and write it to markdown without changes.
+ * functionality,
+ * enabling it to read GitHub admonitions from Markdown
+ * and to write them back to Markdown files.
  *
  * @packageDocumentation
  */
@@ -21,6 +22,7 @@ import {
   type Info
 } from 'mdast-util-to-markdown';
 import 'remark-stringify';
+import 'remark-parse';
 import remarkDirective from 'remark-directive';
 import remarkGithubAdmonitionsToDirectives, {
   GithubAlertType,
@@ -101,10 +103,11 @@ function githubAdmonitionDirectiveToMarkdown(
 };
 
 /**
- * With this Remark plugin
+ * This plugin extends
  * {@link https://www.npmjs.com/package/remark| Remark}
- * can read GutHub admonitions
- * from markdown and write it to markdown without changes.
+ * functionality,
+ * enabling it to read GitHub admonitions from Markdown
+ * and to write them back to Markdown files.
  *
  * @remarks
  *
@@ -116,6 +119,7 @@ export function remarkGithubAdmonitions(
   this: Processor
 ): void {
   const processorData = this.data();
+  processorData.fromMarkdownExtensions ??= [];
   processorData.toMarkdownExtensions ??= [];
   processorData.toMarkdownExtensions.push(
     githubAdmonitionDirectiveToMarkdown()
@@ -125,8 +129,8 @@ export function remarkGithubAdmonitions(
 /**
  * Preset of Remark plugins:
  * {@link remarkGithubAdmonitions},
- * {@link https://www.npmjs.com/package/remark-directive| remark-directive}
- * and {@link https://www.npmjs.com/package/remark-directive
+ * {@link https://www.npmjs.com/package/remark-directive| remark-directive},
+ * {@link https://www.npmjs.com/package/remark-github-admonitions-to-directives
  * | remark-github-admonitions-to-directives}
  *
  * @remarks

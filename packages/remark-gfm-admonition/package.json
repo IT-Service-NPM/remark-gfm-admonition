@@ -10,7 +10,9 @@
 		"remark-plugin",
 		"markdown",
 		"gfm",
-		"admonitions"
+		"admonitions",
+		"callout",
+		"callouts"
 	],
 	"author": {
 		"name": "Sergei S. Betke",

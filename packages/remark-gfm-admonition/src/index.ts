@@ -8,7 +8,7 @@
  * @packageDocumentation
  */
 
-import type { Preset, Processor } from 'unified';
+import type { Plugin, Preset, Processor } from 'unified';
 import type { Parents } from 'mdast';
 import {
   type ContainerDirective,
@@ -115,7 +115,7 @@ function githubAdmonitionDirectiveToMarkdown(
  *
  * @public
  */
-export function remarkGithubAdmonitions(
+export const remarkGithubAdmonitions: Plugin = function (
   this: Processor
 ): void {
   const processorData = this.data();

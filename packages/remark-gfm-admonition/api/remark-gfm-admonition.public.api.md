@@ -7,15 +7,15 @@
 import { ContainerDirective } from 'mdast-util-directive';
 import { Info } from 'mdast-util-to-markdown';
 import type { Parents } from 'mdast';
+import type { Plugin } from 'unified';
 import type { Preset } from 'unified';
-import type { Processor } from 'unified';
 import { State } from 'mdast-util-to-markdown';
 
 // @public
 export function handleGithubAdmonitionDirective(node: ContainerDirective, parent: Parents | undefined, state: State, info: Info): string;
 
 // @public
-export function remarkGithubAdmonitions(this: Processor): void;
+export const remarkGithubAdmonitions: Plugin;
 
 // @public
 export const remarkGithubAdmonitionsPreset: Preset;

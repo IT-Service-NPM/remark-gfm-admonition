@@ -98,9 +98,9 @@ and to write them back to Markdown files.
 ```typescript file=test/examples/01/example.ts
 import { remark } from 'remark';
 import { read } from 'to-vfile';
+import type { VFile } from 'vfile';
 import { remarkGithubAdmonitionsPreset }
   from '@it-service-npm/remark-gfm-admonition';
-import type { VFile } from 'vfile';
 
 export async function remarkUsingExample(
   filePath: string

@@ -2,53 +2,15 @@
 
 [Home](./index.md) &gt; [@it-service-npm/remark-gfm-admonition](./remark-gfm-admonition.md) &gt; [remarkGithubAdmonitions](./remark-gfm-admonition.remarkgithubadmonitions.md)
 
-## remarkGithubAdmonitions() function
+## remarkGithubAdmonitions variable
 
 This plugin extends [Remark](https://www.npmjs.com/package/remark) functionality, enabling it to read GitHub admonitions from Markdown and to write them back to Markdown files.
 
 **Signature:**
 
 ```typescript
-export declare function remarkGithubAdmonitions(this: Processor): void;
+remarkGithubAdmonitions: Plugin
 ```
-
-## Parameters
-
-<table><thead><tr><th>
-
-Parameter
-
-
-</th><th>
-
-Type
-
-
-</th><th>
-
-Description
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-this
-
-
-</td><td>
-
-Processor
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
-
-**Returns:**
-
-void
 
 ## Remarks
 

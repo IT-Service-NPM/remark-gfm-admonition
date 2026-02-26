@@ -33,11 +33,6 @@
 		"noEmitOnError": true,
 		"sourceMap": true,
 		"declaration": true,
-		"declarationMap": true,
-		"paths": {
-			"@it-service-npm/remark-gfm-admonition": [
-				"./dist"
-			]
-		}
-	},
+		"declarationMap": true
+	}
 }

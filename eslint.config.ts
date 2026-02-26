@@ -70,12 +70,15 @@ export default defineConfig([
       '**/*.mjs',
       'node_modules',
       'dist',
-      'coverage'
+      'coverage',
+      'packages/*/dist',
+      'packages/*/coverage'
     ]
   },
   {
     files: [
-      'src/**/*.ts'
+      'src/**/*.ts',
+      'packages/*/src/**/*.ts'
     ],
     plugins: {
       n: ESLintPluginN,
@@ -96,7 +99,10 @@ export default defineConfig([
     },
   },
   {
-    files: ['test/**/*.test.ts'],
+    files: [
+      'test/**/*.test.ts',
+      'packages/*/test/**/*.test.ts'
+    ],
     plugins: {
       n: ESLintPluginN,
       prettier: ESLintPluginPrettier,

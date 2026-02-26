@@ -27,6 +27,7 @@
 	"coverage-gutters.coverageFileNames": [
 		"lcov.info"
 	],
+	"coverage-gutters.coverageBaseDir": "./packages/*/coverage",
 	"coverage-gutters.showGutterCoverage": true,
 	"coverage-gutters.showLineCoverage": true,
 	"coverage-gutters.showRulerCoverage": true,

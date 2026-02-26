@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"paths": {
+			"@it-service-npm/remark-gfm-admonition": [
+				"./packages/remark-gfm-admonition/dist"
+			]
+		}
+	}
+}

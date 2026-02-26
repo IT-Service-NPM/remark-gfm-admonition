@@ -4,7 +4,7 @@
 
 ## remarkGithubAdmonitionsPreset variable
 
-Preset of Remark plugins: [remarkGithubAdmonitions()](./remark-gfm-admonition.remarkgithubadmonitions.md)<!-- -->, [remark-directive](https://www.npmjs.com/package/remark-directive) and [remark-github-admonitions-to-directives](https://www.npmjs.com/package/remark-directive)
+Preset of Remark plugins: [remarkGithubAdmonitions()](./remark-gfm-admonition.remarkgithubadmonitions.md)<!-- -->, [remark-directive](https://www.npmjs.com/package/remark-directive)<!-- -->, [remark-github-admonitions-to-directives](https://www.npmjs.com/package/remark-github-admonitions-to-directives)
 
 **Signature:**
 

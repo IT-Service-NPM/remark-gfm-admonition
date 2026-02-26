@@ -4,7 +4,7 @@
 
 ## remarkGithubAdmonitions() function
 
-With this Remark plugin [Remark](https://www.npmjs.com/package/remark) can read GutHub admonitions from markdown and write it to markdown without changes.
+This plugin extends [Remark](https://www.npmjs.com/package/remark) functionality, enabling it to read GitHub admonitions from Markdown and to write them back to Markdown files.
 
 **Signature:**
 

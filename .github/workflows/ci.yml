@@ -98,16 +98,22 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup NodeJS
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Setup NodeJS ${{ matrix.node-version }}
+        id: setup-node
         uses: actions/setup-node@v6
         with:
-          node-version: latest
+          node-version: ${{ matrix.node-version }}
           cache: pnpm
           package-manager-cache: true
-          cache-dependency-path: package.json, packages/*/package.json
+          cache-dependency-path: '**/package.json'
 
       - uses: pnpm/action-setup@v4
-        name: Install pnpm and packages
+        name: Install packages
         with:
           run_install: true
 

@@ -1,0 +1,6 @@
+{
+	"Exclude": [
+		"snapshots",
+		"fixtures"
+	]
+}

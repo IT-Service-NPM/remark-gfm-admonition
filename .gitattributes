@@ -8,6 +8,9 @@
 *.tsx      text  merge=text diff=text eol=lf
 
 *.yml      text  merge=text diff=text eol=lf
+*.yaml     text  merge=text diff=text eol=lf
+
+*.html     text  merge=text diff=text eol=lf
 
 package.json text merge=json diff=text eol=lf
 package-lock.json text merge=json diff=text eol=lf

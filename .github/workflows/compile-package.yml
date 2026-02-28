@@ -1,3 +1,4 @@
+---
 name: Compile 'dist' from sources
 
 on:

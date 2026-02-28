@@ -6,7 +6,10 @@
  * @link https://github.com/JanSzewczyk/semantic-release-config/blob/main/src/index.js
  */
 export default {
-  extends: "@szum-tech/semantic-release-config/without-npm",
+  extends: [
+    "@szum-tech/semantic-release-config/without-npm",
+    "semantic-release-monorepo"
+  ],
   branches: ["main"],
   "additional-packages": ["@semantic-release/git", "@semantic-release/changelog"],
   plugins: [
@@ -49,9 +52,7 @@ export default {
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.`
     }],
-    ["@semantic-release/npm", {
-      npmPublish: false
-    }],
+    ["@anolilab/semantic-release-pnpm"],
     "@semantic-release/github",
     ["@semantic-release/git", {
       assets: [

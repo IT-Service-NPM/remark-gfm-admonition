@@ -26,6 +26,7 @@
 	"scripts": {},
 	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
+		"@anolilab/semantic-release-pnpm": "^5.0.0",
 		"@commitlint/cli": "^20.3.0",
 		"@commitlint/config-angular": "^20.3.0",
 		"@commitlint/config-conventional": "^20.3.0",
@@ -38,7 +39,6 @@
 		"@semantic-release/commit-analyzer": "^13.0.0",
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^12.0.2",
-		"@semantic-release/npm": "^13.1.2",
 		"@semantic-release/release-notes-generator": "^14.0.1",
 		"@szum-tech/semantic-release-config": "^2.3.5",
 		"@types/node": "^25.2.3",
@@ -64,6 +64,7 @@
 		"remark-typography": "^0.7.0",
 		"remark-validate-links": "^13.0.2",
 		"semantic-release": "^25.0.2",
+		"semantic-release-monorepo": "^8.0.2",
 		"tsdoc-markdown": "^1.0.0",
 		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",

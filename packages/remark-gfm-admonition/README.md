@@ -56,25 +56,11 @@ This plugin extends Remark’s functionality,
 enabling it to read GitHub admonitions from Markdown
 and to write them back to Markdown files.
 
-> [!IMPORTANT]
-> [`remark-directive`](https://www.npmjs.com/package/remark-directive)
-> plugin expected
-> and [`remark-github-admonitions-to-directives`](https://www.npmjs.com/package/remark-github-admonitions-to-directives).
-
-> [!TIP]
-> This package provides plugin and preset with expected plugins:
->
-> - `remarkGithubAdmonitionsPreset`. This preset contains:
->   - `remarkDirective`
->   - `remarkGithubAdmonitionsToDirectives`
->   - `remarkGithubAdmonitions`
-
 ## Contents
 
 - [Install](#install)
 - [Examples](#examples)
   - [Write GutHub admonitions to markdown](#write-guthub-admonitions-tomarkdown)
-  - [Convert directives to GutHub admonitions](#convert-directives-to-guthubadmonitions)
 - [API](#api)
 - [License](#license)
 
@@ -99,14 +85,14 @@ and to write them back to Markdown files.
 import { remark } from 'remark';
 import { read } from 'to-vfile';
 import type { VFile } from 'vfile';
-import { remarkGithubAdmonitionsPreset }
+import { remarkGithubAdmonitions }
   from '@it-service-npm/remark-gfm-admonition';
 
 export async function remarkUsingExample(
   filePath: string
 ): Promise<VFile> {
   return remark()
-    .use(remarkGithubAdmonitionsPreset)
+    .use(remarkGithubAdmonitions)
     .process(await read(filePath));
 };
 
@@ -234,102 +220,6 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
-```
-
-### Convert directives to GutHub admonitions
-
-Remark writes broken markdown file with GutHub admonitions.
-
-`@it-service-npm/remark-gfm-admonition`
-extends Remark’s functionality,
-enabling it to read directives from source file
-and to write GitHub admonitions to Markdown files.
-
-Source files:
-
-directives.md:
-
-```markdown file=test/examples/02/fixtures/directives.md
-# markdown file with GitHub admonitions directives
-
-Text before.
-
-:::note
-Note example from directive.
-:::
-
-:::tip
-Tip example from directive.
-:::
-
-:::warning
-Warning example from directive.
-:::
-
-:::info
-Info example from directive.
-:::
-
-:::danger
-Danger example from directive.
-:::
-
-Text after.
-
-```
-
-unknown-directives.md:
-
-```markdown file=test/examples/02/fixtures/unknown-directives.md
-# markdown file with other directives
-
-Text before.
-
-:::new-directive
-Unknown directive example.
-:::
-
-Text after.
-
-```
-
-Remark output:
-
-```markdown file=test/examples/02/snapshots/directives.md
-# markdown file with GitHub admonitions directives
-
-Text before.
-
-> [!NOTE]
-> Note example from directive.
-
-> [!TIP]
-> Tip example from directive.
-
-> [!WARNING]
-> Warning example from directive.
-
-> [!IMPORTANT]
-> Info example from directive.
-
-> [!CAUTION]
-> Danger example from directive.
-
-Text after.
-
-```
-
-```markdown file=test/examples/02/snapshots/unknown-directives.md
-# markdown file with other directives
-
-Text before.
-
-:::new-directive
-Unknown directive example.
-:::
-
-Text after.
 
 ```
 

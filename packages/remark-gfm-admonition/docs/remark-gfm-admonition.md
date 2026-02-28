@@ -6,32 +6,6 @@
 
 This plugin extends [Remark](https://www.npmjs.com/package/remark) functionality, enabling it to read GitHub admonitions from Markdown and to write them back to Markdown files.
 
-## Functions
-
-<table><thead><tr><th>
-
-Function
-
-
-</th><th>
-
-Description
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[handleGithubAdmonitionDirective(node, parent, state, info)](./remark-gfm-admonition.handlegithubadmonitiondirective.md)
-
-
-</td><td>
-
-GutHub admonitions directives handler for `mdast-util-to-markdown`
-
-
-</td></tr>
-</tbody></table>
-
 ## Variables
 
 <table><thead><tr><th>
@@ -53,17 +27,6 @@ Description
 </td><td>
 
 This plugin extends [Remark](https://www.npmjs.com/package/remark) functionality, enabling it to read GitHub admonitions from Markdown and to write them back to Markdown files.
-
-
-</td></tr>
-<tr><td>
-
-[remarkGithubAdmonitionsPreset](./remark-gfm-admonition.remarkgithubadmonitionspreset.md)
-
-
-</td><td>
-
-Preset of Remark plugins: [remarkGithubAdmonitions](./remark-gfm-admonition.remarkgithubadmonitions.md)<!-- -->, [remark-directive](https://www.npmjs.com/package/remark-directive)<!-- -->, [remark-github-admonitions-to-directives](https://www.npmjs.com/package/remark-github-admonitions-to-directives)
 
 
 </td></tr>

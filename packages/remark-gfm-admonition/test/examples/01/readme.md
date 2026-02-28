@@ -11,16 +11,17 @@ and to write them back to Markdown files.
 import { remark } from 'remark';
 import { read } from 'to-vfile';
 import type { VFile } from 'vfile';
-import { remarkGithubAdmonitionsPreset }
+import { remarkGithubAdmonitions }
   from '@it-service-npm/remark-gfm-admonition';
 
 export async function remarkUsingExample(
   filePath: string
 ): Promise<VFile> {
   return remark()
-    .use(remarkGithubAdmonitionsPreset)
+    .use(remarkGithubAdmonitions)
     .process(await read(filePath));
 };
+
 ```
 
 Source files:
@@ -63,6 +64,7 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
+
 ```
 
 Remark output:
@@ -103,6 +105,7 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
+
 ```
 
 Remark output without plugin:
@@ -143,4 +146,5 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
+
 ```

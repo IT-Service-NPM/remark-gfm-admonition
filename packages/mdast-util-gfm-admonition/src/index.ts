@@ -13,7 +13,7 @@ declare module 'mdast' {
    *
    * @public
    */
-  interface GfmCallout extends Parent {
+  export interface GfmCallout extends Parent {
     type: 'gfmCallout';
     kind: string;
   }
@@ -163,6 +163,5 @@ declare module 'mdast-util-to-markdown' {
 
 }
 
-export type { GfmCallout } from 'mdast';
 export { gfmCalloutFromMarkdown } from './lib/from-markdown.js';
 export { gfmCalloutToMarkdown } from './lib/to-markdown.js';

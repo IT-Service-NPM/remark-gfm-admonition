@@ -5,10 +5,7 @@
 ```ts
 
 import type { Extension } from 'mdast-util-from-markdown';
-import { GfmCallout } from 'mdast';
 import type { Options } from 'mdast-util-to-markdown';
-
-export { GfmCallout }
 
 // @public
 export function gfmCalloutFromMarkdown(): Extension;

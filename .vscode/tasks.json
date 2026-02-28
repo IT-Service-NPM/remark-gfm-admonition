@@ -15,7 +15,7 @@
 		{
 			"label": "Install dependencies",
 			"type": "shell",
-			"command": "npm install --workspaces",
+			"command": "pnpm install --recursive",
 			"runOptions": {
 				"runOn": "folderOpen"
 			},
@@ -32,7 +32,7 @@
 				"kind": "build",
 				"isDefault": false
 			},
-			"command": "npm run build",
+			"command": "pnpm run --if-present --recursive build",
 			"presentation": {
 				"reveal": "always",
 				"clear": true
@@ -44,7 +44,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"command": "npm run CI",
+			"command": "pnpm run --if-present --recursive CI",
 			"presentation": {
 				"reveal": "always",
 				"clear": true
@@ -57,7 +57,7 @@
 				"isDefault": true
 			},
 			// "dependsOn": "build",
-			"command": "npm run test",
+			"command": "pnpm run --if-present --recursive test",
 			"presentation": {
 				"reveal": "always",
 				"clear": true

@@ -23,22 +23,15 @@
 	"workspaces": [
 		"packages/*"
 	],
-	"scripts": {
-		"build": "npm run build --workspaces",
-		"CI": "npm run CI  --workspaces",
-		"check-exports": "npm run check-exports --workspaces",
-		"lint": "npm run lint --workspaces",
-		"test": "npm run test --workspaces",
-		"update-test-snapshots": "npm run update-test-snapshots --workspaces",
-		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
-	},
+	"scripts": {},
+	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
 		"@commitlint/cli": "^20.3.0",
 		"@commitlint/config-angular": "^20.3.0",
 		"@commitlint/config-conventional": "^20.3.0",
 		"@commitlint/types": "^20.2.0",
 		"@eslint/js": "^9.39.2",
-		"@it-service-npm/remark-include": "^5.0.0",
+		"@it-service-npm/remark-include": "^5.0.1",
 		"@microsoft/api-documenter": "^7.26.0",
 		"@microsoft/api-extractor": "^7.48.0",
 		"@semantic-release/changelog": "^6.0.3",

@@ -43,6 +43,7 @@
 		"lumjs",
 		"MAINT",
 		"markdownlint",
+		"micromark",
 		"nodenext",
 		"nodir",
 		"PACKAGEJSON",

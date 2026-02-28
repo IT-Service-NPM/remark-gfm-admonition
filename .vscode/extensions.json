@@ -22,7 +22,8 @@
 		"adam-bender.commit-message-editor",
 		"bierner.jsdoc-markdown-highlighting",
 		"vicius.tsdoc-gen",
-		"connor4312.nodejs-testing"
+		"connor4312.nodejs-testing",
+		"jacano.vscode-pnpm"
 	],
 	"unwantedRecommendations": [
 		"serhioromano.vscode-gitflow"

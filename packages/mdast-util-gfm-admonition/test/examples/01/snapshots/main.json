@@ -1,0 +1,233 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "heading",
+      "depth": 1,
+      "children": [
+        {
+          "type": "text",
+          "value": "Basic Usage"
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "NOTE",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Useful information that users should know, even when skimming content."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "NOTE",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Useful information that users should know, even when skimming content."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "NOTE",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Useful information that users should know, even when skimming content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Useful information that users should know, even when skimming content."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "NOTE",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Before list:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "list 1"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "start": null,
+                  "spread": false,
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "list 1.1"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "list 1.2"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "list 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "After list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "TIP",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Helpful advice for doing things better or more easily."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "IMPORTANT",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Key information users need to know to achieve their goal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "WARNING",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Urgent info that needs immediate user attention to avoid problems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gfmCallout",
+      "kind": "CAUTION",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Advises about risks or negative outcomes of certain actions."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

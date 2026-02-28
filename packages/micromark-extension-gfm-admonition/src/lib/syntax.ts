@@ -59,8 +59,8 @@ function tokenize(
    * Start of callout
    *
    * ```markdown
-   * > [!type]
-   * ^
+   * > | > [!type]
+   *     ^
    * ```
    */
   function start(code: Code): State | undefined {
@@ -76,8 +76,8 @@ function tokenize(
    * Before callout type
    *
    * ```markdown
-   * > [!type]
-   *  ^
+   * > | > [!type]
+   *      ^
    * ```
    */
   function after(code: Code): State | undefined {
@@ -95,8 +95,8 @@ function tokenize(
    * Inside marker before callout type
    *
    * ```markdown
-   * > [!type]
-   *   ^
+   * > | > [!type]
+   *       ^
    * ```
    */
   function typeStart(code: Code): State | undefined {
@@ -115,8 +115,8 @@ function tokenize(
    * Inside exclamation mark before callout type
    *
    * ```markdown
-   * > [!type]
-   *    ^
+   * > | > [!type]
+   *        ^
    * ```
    */
   function typeStartAfter(code: Code): State | undefined {
@@ -135,8 +135,8 @@ function tokenize(
    * Inside callout type
    *
    * ```markdown
-   * > [!type]
-   *     ^
+   * > | > [!type]
+   *         ^
    * ```
    */
   function typeStringInside(code: Code): State | undefined {
@@ -155,8 +155,8 @@ function tokenize(
    * Inside marker after callout type
    *
    * ```markdown
-   * > [!type]
-   *         ^
+   * > | > [!type]
+   *             ^
    * ```
    */
   function typeEnd(code: Code): State | undefined {
@@ -182,8 +182,8 @@ function tokenize(
    * After marker after callout type
    *
    * ```markdown
-   * > [!type]
-   *          ^
+   * > | > [!type]
+   *              ^
    * ```
    */
   function typeEndAfter(code: Code): State | undefined {
@@ -199,9 +199,9 @@ function tokenize(
    * After marker after callout type
    *
    * ```markdown
-   * > [!type]
-   * >
-   * ^
+   * > | > [!type]
+   * > | >
+   *     ^
    * ```
    */
   function contentStart(code: Code): State | undefined {
@@ -223,9 +223,9 @@ function tokenizeContent(
    * Start of callout continuation
    *
    * ```markdown
-   * > [!type]
-   * > Content
-   * ^
+   * > | > [!type]
+   * > | > Content
+   *     ^
    * ```
    */
   function start(code: Code): State | undefined {
@@ -251,9 +251,9 @@ function tokenizeContent(
    * After `>`, before optional whitespace.
    *
    * ```markdown
-   * > [!type]
-   * > Content
-   *  ^
+   * > | > [!type]
+   * > | > Content
+   *      ^
    * ```
    */
   function after(code: Code): State | undefined {
@@ -283,8 +283,8 @@ function tokenizeContentContinuation(
    * Start of callout continuation
    *
    * ```markdown
-   * > Content
-   * ^
+   * > | > Content
+   *     ^
    * ```
    */
   function start(code: Code): State | undefined {

@@ -57,8 +57,9 @@
 		"update-readme": "npm run update-examples-readme && npm run update-main-readme",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 	},
+	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/micromark-extension-gfm-admonition": "^0.1.0",
+		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:*",
 		"mdast-util-from-markdown": "^2.0.3",
 		"mdast-util-to-markdown": "^2.1.2"
 	},

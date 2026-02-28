@@ -55,10 +55,12 @@
 		"update-readme": "npm run update-examples-readme && npm run update-main-readme",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 	},
+	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/micromark-extension-gfm-admonition": "^0.1.0",
-		"@it-service-npm/mdast-util-gfm-admonition": "^0.1.0",
-		"remark": "^15.0.1"
+		"@it-service-npm/mdast-util-gfm-admonition": "workspace:*",
+		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:*",
+		"remark-parse": "^11.0.0",
+		"remark-stringify": "^11.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^20.3.0",
@@ -90,18 +92,22 @@
 		"eslint-plugin-tsdoc": "^0.5.0",
 		"eslint-plugin-unicorn": "^63.0.0",
 		"mdast-util-directive": "^3.1.0",
+		"remark": "^15.0.1",
 		"remark-cli": "^12.0.1",
 		"remark-code-import": "^1.2.0",
 		"remark-gfm": "^4.0.0",
 		"remark-license": "^6.1.0",
 		"remark-lint-code-block-style": "^4.0.0",
+		"remark-parse": "^11.0.0",
 		"remark-preset-lint-consistent": "^6.0.0",
 		"remark-preset-lint-recommended": "^7.0.0",
 		"remark-remove-comments": "^1.1.1",
+		"remark-stringify": "^11.0.0",
 		"remark-toc": "^9.0.0",
 		"remark-typography": "^0.7.0",
 		"remark-validate-links": "^13.0.2",
 		"semantic-release": "^25.0.2",
+		"to-vfile": "^8.0.0",
 		"tsdoc-markdown": "^1.0.0",
 		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",

@@ -113,16 +113,10 @@ npm install --save @it-service-npm/mdast-util-gfm-admonition
 ### Read from markdown file and write back all types of GutHub admonitions
 
 This package adds support for
-[GitHub (GFM) admonitions] syntax to [`mdast-util-from-markdown`]
+GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
 (to support parsing admonitions in markdown into a syntax tree)
-and to [`mdast-util-to-markdown`]
+and to `mdast-util-to-markdown`
 (to support serializing admonitions in syntax trees to markdown).
-
-[GitHub (GFM) admonitions]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
-
-[`mdast-util-from-markdown`]: https://github.com/syntax-tree/mdast-util-from-markdown
-
-[`mdast-util-to-markdown`]: https://github.com/syntax-tree/mdast-util-to-markdown
 
 Usage example:
 
@@ -195,7 +189,7 @@ Source files:
 
 ```
 
-[`mdast-util-from-markdown`] get markdown AST:
+\[`mdast-util-from-markdown`] get markdown AST:
 
 ```json file=test/examples/01/snapshots/main.json
 {
@@ -433,7 +427,7 @@ Source files:
 }
 ```
 
-And [`mdast-util-to-markdown`] write markdown AST back to markdown file:
+And \[`mdast-util-to-markdown`] write markdown AST back to markdown file:
 
 ```markdown file=test/examples/01/snapshots/main.md
 # Basic Usage

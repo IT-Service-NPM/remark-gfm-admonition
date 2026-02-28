@@ -18,7 +18,17 @@ updates:
 
   - package-ecosystem: npm
     target-branch: main
-    directory: /
+    directories:
+      - /
+      - /packages/*/
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
+      gfm-admonitions:
+        patterns:
+          - "@it-service-npm/*-gfm-admonition"
     schedule:
       interval: weekly
     commit-message:

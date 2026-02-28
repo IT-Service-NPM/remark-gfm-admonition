@@ -13,8 +13,6 @@
 
 > [!TIP]*
 
->  [!TIP]
-
 > [!TIP]Title
 
 > [!TIP]+Title

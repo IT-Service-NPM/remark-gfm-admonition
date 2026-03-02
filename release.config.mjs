@@ -64,9 +64,6 @@ All notable changes to this project will be documented in this file. See
       ],
       message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
-    ["@semantic-release/github", {
-      "successComment": false,
-      "failComment": false
-    }]
+    ["@semantic-release/github", {}]
   ]
 };

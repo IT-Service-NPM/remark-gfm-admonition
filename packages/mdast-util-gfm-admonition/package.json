@@ -59,7 +59,7 @@
 	},
 	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/micromark-extension-gfm-admonition": "1.0.0",
+		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:^*",
 		"mdast-util-from-markdown": "^2.0.3",
 		"mdast-util-to-markdown": "^2.1.2"
 	},

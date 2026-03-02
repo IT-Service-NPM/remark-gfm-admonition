@@ -7,8 +7,7 @@
  */
 export default {
   extends: [
-    "@szum-tech/semantic-release-config/without-npm",
-    "semantic-release-monorepo"
+    "@anolilab/semantic-release-preset/pnpm"
   ],
   branches: ["main"],
   "additional-packages": ["@semantic-release/git", "@semantic-release/changelog"],

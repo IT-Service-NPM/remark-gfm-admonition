@@ -96,40 +96,24 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: false
+      - uses: "IT-Service-NPM/.github/.github/actions/setup@main"
 
-      - name: Setup NodeJS
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: latest
-          cache: pnpm
-          package-manager-cache: true
-          cache-dependency-path: '**/package.json'
-
-      - uses: pnpm/action-setup@v4
-        name: Install packages
-        with:
-          run_install: true
-
-      - name: Download packages 'dist'
-        uses: actions/download-artifact@v8
-        with:
-          name: dist
-          path: packages/
+      - uses: "IT-Service-NPM/.github/.github/actions/download-packages-dist@main"
 
       - name: Update API documentation
-        run: pnpm run --if-present --recursive update-readme-API
+        run: pnpm run --if-present --recursive build:readme:API
 
       - name: Update readme.md
-        run: pnpm run --if-present --recursive update-readme
+        run: pnpm run --if-present --recursive build:readme
 
-      - uses: codfish/semantic-release-action@v5
+      - name: "Semantic Release"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GIT_AUTHOR_NAME: "github-actions-shell"
+          GIT_AUTHOR_EMAIL: "github-actions[bot]@users.noreply.github.com"
+          GIT_COMMITTER_NAME: "github-actions-shell"
+          GIT_COMMITTER_EMAIL: "github-actions[bot]@users.noreply.github.com"
+        run: "pnpm exec multi-semantic-release"

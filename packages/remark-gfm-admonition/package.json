@@ -57,14 +57,14 @@
 	},
 	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/mdast-util-gfm-admonition": "workspace:*",
-		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:*",
+		"@it-service-npm/mdast-util-gfm-admonition": "*",
+		"@it-service-npm/micromark-extension-gfm-admonition": "*",
 		"remark-parse": "^11.0.0",
 		"remark-stringify": "^11.0.0"
 	},
 	"devDependencies": {
 		"@types/mdast": "^4.0.4",
-		"@types/node": "^25.2.3",
+		"@types/node": "^25.3.3",
 		"mdast-util-directive": "^3.1.0",
 		"remark": "^15.0.1",
 		"to-vfile": "^8.0.0",

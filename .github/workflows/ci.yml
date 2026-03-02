@@ -21,6 +21,8 @@ on:
       - 'README.md'
       - '.github/workflows/ci.yml'
   push:
+    branches:
+      - main
     paths:
       - 'packages/*/src/**'
       - 'packages/*/package.json'

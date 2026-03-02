@@ -1,7 +1,7 @@
 {
 	"name": "@it-service-npm/remark-gfm-admonition",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "This plugin extends Remark's functionality, enabling it to read GitHub admonitions from Markdown and write them back to Markdown files",
 	"publishConfig": {
 		"access": "public"
@@ -57,8 +57,8 @@
 	},
 	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/mdast-util-gfm-admonition": "1.0.0",
-		"@it-service-npm/micromark-extension-gfm-admonition": "1.0.0",
+		"@it-service-npm/mdast-util-gfm-admonition": "workspace:^",
+		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:^",
 		"remark-parse": "^11.0.0",
 		"remark-stringify": "^11.0.0"
 	},

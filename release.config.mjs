@@ -51,20 +51,22 @@ export default {
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.`
     }],
-    ["@semantic-release/npm", {
-      npmPublish: false
-    }],
-    ["@anolilab/semantic-release-pnpm"],
-    "@semantic-release/github",
+    "@anolilab/semantic-release-clean-package-json",
+    "@anolilab/semantic-release-pnpm",
     ["@semantic-release/git", {
       assets: [
         "package.json",
         "CHANGELOG.md",
-        "docs/*.md",
-        "readme.md",
-        "test/examples/**/readme.md"
+        "packages/*/docs/*.md",
+        "packages/*/api/*.md",
+        "packages/*/test/examples/**/readme.md",
+        "packages/*/README.md"
       ],
       message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+    }],
+    ["@semantic-release/github", {
+      "successComment": false,
+      "failComment": false
     }]
   ]
 };

@@ -99,6 +99,13 @@ jobs:
           fetch-depth: 0
 
       - uses: "IT-Service-NPM/.github/.github/actions/setup@main"
+        with:
+          node-version: "24.x"
+
+      - name: "Install npm@7"
+        #TODO: workaround for https://github.com/pnpm/pnpm/issues/10703
+        shell: bash
+        run: npm install -g npm@7
 
       - uses: "IT-Service-NPM/.github/.github/actions/download-packages-dist@main"
 

@@ -1,7 +1,7 @@
 {
 	"name": "@it-service-npm/mdast-util-gfm-admonition",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "This extension extends MDAST functionality, enabling it to work with GitHub admonitions",
 	"publishConfig": {
 		"access": "public"
@@ -59,7 +59,7 @@
 	},
 	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
-		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:*",
+		"@it-service-npm/micromark-extension-gfm-admonition": "1.0.0",
 		"mdast-util-from-markdown": "^2.0.3",
 		"mdast-util-to-markdown": "^2.1.2"
 	},

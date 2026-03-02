@@ -77,7 +77,7 @@ Source files:
 
 ```
 
-\[`mdast-util-from-markdown`] get markdown AST:
+`mdast-util-from-markdown` get markdown AST:
 
 ```json file=./snapshots/main.json
 {

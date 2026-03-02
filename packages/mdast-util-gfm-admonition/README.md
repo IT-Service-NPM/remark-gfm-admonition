@@ -1,14 +1,11 @@
 # @it-service-npm/mdast-util-gfm-admonition
 
-[![GitHub release][github-release]][github-release-url]
 [![NPM release][npm]][npm-url]
 [![Node version][node]][node-url]
 [![Dependencies status][deps]][deps-url]
 [![Install size][size]][size-url]
 
 [![CI Status][build]][build-url]
-[![Tests Results][tests]][tests-url]
-[![Coverage status][coverage]][coverage-url]
 
 [![Semantic Versioning](https://img.shields.io/badge/Semantic%20Versioning-v2.0.0-green.svg?logo=semver)](https://semver.org/lang/ru/spec/v2.0.0.html)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-v1.0.0-yellow.svg?logo=git)](https://conventionalcommits.org)
@@ -19,10 +16,6 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-333333.svg?logo=typescript)](http://www.typescriptlang.org/)
 [![EditorConfig](https://img.shields.io/badge/EditorConfig-333333.svg?logo=editorconfig)](https://editorconfig.org)
 [![ESLint](https://img.shields.io/badge/ESLint-3A33D1?logo=eslint)](https://eslint.org)
-
-[github-release]: https://img.shields.io/github/v/release/IT-Service-NPM/remark-gfm-admonition.svg?sort=semver&logo=github
-
-[github-release-url]: https://github.com/IT-Service-NPM/remark-gfm-admonition/releases
 
 [npm]: https://img.shields.io/npm/v/@it-service-npm/mdast-util-gfm-admonition.svg?logo=npm
 
@@ -40,17 +33,9 @@
 
 [size-url]: https://packagephobia.com/result?p=@it-service-npm/mdast-util-gfm-admonition
 
-[build]: https://github.com/IT-Service-NPM/mdast-util-gfm-admonition/actions/workflows/ci.yml/badge.svg?branch=main
+[build]: https://github.com/IT-Service-NPM/remark-gfm-admonition/actions/workflows/ci.yml/badge.svg?branch=main
 
-[build-url]: https://github.com/IT-Service-NPM/mdast-util-gfm-admonition/actions/workflows/ci.yml
-
-[tests]: https://img.shields.io/endpoint?logo=node.js&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fmdast-util-gfm-admonition-junit-tests.json
-
-[tests-url]: https://github.com/IT-Service-NPM/mdast-util-gfm-admonition/actions/workflows/ci.yml
-
-[coverage]: https://img.shields.io/endpoint?logo=vitest&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fmdast-util-gfm-admonition-lcov-coverage.json
-
-[coverage-url]: https://github.com/IT-Service-NPM/mdast-util-gfm-admonition/actions/workflows/ci.yml
+[build-url]: https://github.com/IT-Service-NPM/remark-gfm-admonition/actions/workflows/ci.yml
 
 [`mdast`] extensions to parse and serialize
 [GitHub (GFM) admonitions].
@@ -189,7 +174,7 @@ Source files:
 
 ```
 
-\[`mdast-util-from-markdown`] get markdown AST:
+`mdast-util-from-markdown` get markdown AST:
 
 ```json file=test/examples/01/snapshots/main.json
 {

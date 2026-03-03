@@ -1,6 +1,6 @@
 *.md       text  merge=text diff=text eol=lf
 
-*.json     text  merge=json diff=text eol=lf
+*.json     text  merge=json diff=text eol=lf linguist-language=JSON-with-Comments
 *.js       text  merge=text diff=text eol=lf
 *.cjs      text  merge=text diff=text eol=lf
 *.mjs      text  merge=text diff=text eol=lf

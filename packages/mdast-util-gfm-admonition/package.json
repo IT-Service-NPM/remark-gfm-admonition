@@ -65,10 +65,10 @@
 	},
 	"devDependencies": {
 		"@types/mdast": "^4.0.4",
-		"@types/node": "^25.3.3",
+		"@types/node": "^25.6.0",
 		"mdast-util-directive": "^3.1.0",
 		"micromark-util-types": "^2.0.2",
-		"typescript": "^5.9.3",
+		"typescript": "^6.0.2",
 		"unified": "^11.0.5",
 		"unist-util-remove-position": "^5.0.0",
 		"vfile": "^6.0.3"

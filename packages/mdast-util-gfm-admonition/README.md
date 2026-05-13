@@ -83,7 +83,7 @@ by abstracting these internal away.
 
 - [Install](#install)
 - [Examples](#examples)
-  - [Read from markdown file and write back all types of GutHub admonitions](#read-from-markdown-file-and-write-back-all-types-of-guthubadmonitions)
+  - [Read from markdown file and write back all types of GitHub admonitions](#read-from-markdown-file-and-write-back-all-types-of-githubadmonitions)
 - [API](#api)
 - [License](#license)
 
@@ -95,7 +95,7 @@ npm install --save @it-service-npm/mdast-util-gfm-admonition
 
 ## Examples
 
-### Read from markdown file and write back all types of GutHub admonitions
+### Read from markdown file and write back all types of GitHub admonitions
 
 This package adds support for
 GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
@@ -410,7 +410,7 @@ Source files:
 }
 ```
 
-And \[`mdast-util-to-markdown`] write markdown AST back to markdown file:
+And \[`mdast-util-to-markdown`] writes markdown AST back to markdown file:
 
 ```markdown
 # Basic Usage

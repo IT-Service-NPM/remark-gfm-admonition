@@ -62,7 +62,7 @@ You can use these extensions when you are working with [micromark].
 - [Install](#install)
 - [Syntax](#syntax)
 - [Examples](#examples)
-  - [Support all GutHub admonition types](#support-all-guthubadmonitiontypes)
+  - [Support all GitHub admonition types](#support-all-githubadmonitiontypes)
 - [API](#api)
 - [License](#license)
 
@@ -95,9 +95,9 @@ The above grammar is just a rough description.
 
 ## Examples
 
-### Support all GutHub admonition types
+### Support all GitHub admonition types
 
-Remark writes broken markdown file with GutHub admonitions.
+Remark writes broken markdown file with GitHub admonitions.
 
 `@it-service-npm/micromark-extension-gfm-admonition`
 extends micromark functionality,

@@ -1,6 +1,6 @@
-# Support all GutHub admonition types
+# Support all GitHub admonition types
 
-Remark writes broken markdown file with GutHub admonitions.
+Remark writes broken markdown file with GitHub admonitions.
 
 `@it-service-npm/micromark-extension-gfm-admonition`
 extends micromark functionality,

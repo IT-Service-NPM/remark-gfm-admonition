@@ -1,6 +1,6 @@
-# Write GutHub admonitions to markdown
+# Write GitHub admonitions to markdown
 
-Remark writes broken markdown file with GutHub admonitions.
+Remark writes broken markdown file with GitHub admonitions.
 
 `@it-service-npm/remark-gfm-admonition`
 extends Remark’s functionality,

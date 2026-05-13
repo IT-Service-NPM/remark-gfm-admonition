@@ -45,7 +45,7 @@ and to write them back to Markdown files.
 
 - [Install](#install)
 - [Examples](#examples)
-  - [Write GutHub admonitions to markdown](#write-guthub-admonitions-tomarkdown)
+  - [Write GitHub admonitions to markdown](#write-github-admonitions-tomarkdown)
 - [API](#api)
 - [License](#license)
 
@@ -57,9 +57,9 @@ npm install --save-dev @it-service-npm/remark-gfm-admonition
 
 ## Examples
 
-### Write GutHub admonitions to markdown
+### Write GitHub admonitions to markdown
 
-Remark writes broken markdown file with GutHub admonitions.
+Remark writes broken markdown file with GitHub admonitions.
 
 `@it-service-npm/remark-gfm-admonition`
 extends Remark’s functionality,

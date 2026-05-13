@@ -9,7 +9,7 @@ and to write GitHub admonitions to HTML files.
 
 Source files:
 
-```markdown file=./fixtures/basic.md
+```markdown
 # Basic Usage
 
 > [!NOTE]
@@ -35,10 +35,9 @@ Source files:
 > - list 2
 >
 > After list.
-
 ```
 
-```markdown file=./fixtures/types.md
+```markdown
 # All GitHub admonition types
 
 > [!NOTE]
@@ -56,12 +55,11 @@ Source files:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-
 ```
 
 Output:
 
-```html file=./snapshots/basic.html
+```html
 <h1>Basic Usage</h1>
 <blockquote class="callout" data-type="NOTE">
 <p>Useful information that users should know, even when skimming content.</p>
@@ -86,10 +84,9 @@ Output:
 </ul>
 <p>After list.</p>
 </blockquote>
-
 ```
 
-```html file=./snapshots/types.html
+```html
 <h1>All GitHub admonition types</h1>
 <blockquote class="callout" data-type="NOTE">
 <p>Useful information that users should know, even when skimming content.</p>
@@ -106,5 +103,4 @@ Output:
 <blockquote class="callout" data-type="CAUTION">
 <p>Advises about risks or negative outcomes of certain actions.</p>
 </blockquote>
-
 ```

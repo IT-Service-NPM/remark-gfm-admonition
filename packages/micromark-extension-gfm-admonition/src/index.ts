@@ -27,5 +27,5 @@ declare module 'micromark-util-types' {
 import 'micromark-util-types';
 import 'micromark-util-symbol';
 
-export { gfmCallout } from './lib/syntax.js';
-export { gfmCalloutHtml } from './lib/html.js';
+export { gfmCallout } from './lib/syntax.ts';
+export { gfmCalloutHtml } from './lib/html.ts';

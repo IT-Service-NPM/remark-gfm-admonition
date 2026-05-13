@@ -1,4 +1,3 @@
-import type { GfmCallout } from 'mdast';
 import type { Extension, Token } from 'mdast-util-from-markdown';
 import '@it-service-npm/micromark-extension-gfm-admonition';
 
@@ -17,7 +16,7 @@ export function gfmCalloutFromMarkdown(): Extension {
             type: 'gfmCallout',
             kind: 'TIP',
             children: []
-          } as GfmCallout,
+          },
           token
         );
       },

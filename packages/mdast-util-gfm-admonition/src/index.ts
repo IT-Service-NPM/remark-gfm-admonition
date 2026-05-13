@@ -163,5 +163,5 @@ declare module 'mdast-util-to-markdown' {
 
 }
 
-export { gfmCalloutFromMarkdown } from './lib/from-markdown.js';
-export { gfmCalloutToMarkdown } from './lib/to-markdown.js';
+export { gfmCalloutFromMarkdown } from './lib/from-markdown.ts';
+export { gfmCalloutToMarkdown } from './lib/to-markdown.ts';

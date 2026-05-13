@@ -1,6 +1,4 @@
 node_modules
-package-lock.json
-pnpm-lock.yaml
 dist
 *.tsbuildinfo
 **/tsconfig.tsbuildinfo
@@ -10,7 +8,6 @@ coverage/lcov.info
 temp
 *.tgz
 packages/*/node_modules
-packages/*/package-lock.json
 packages/*/test/results/**/*.xml
 packages/*/test/results/*.xml
 packages/*/coverage/lcov.info

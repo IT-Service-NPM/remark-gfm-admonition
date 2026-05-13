@@ -1,0 +1,23 @@
+# Read from markdown file and write back all types of GutHub admonitions
+
+This package adds support for
+GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
+(to support parsing admonitions in markdown into a syntax tree)
+and to `mdast-util-to-markdown`
+(to support serializing admonitions in syntax trees to markdown).
+
+Usage example:
+
+::include-code{file=./example.ts language=typescript}
+
+Source files:
+
+::include-code{file=./fixtures/main.md language=markdown}
+
+`mdast-util-from-markdown` get markdown AST:
+
+::include-code{file=./snapshots/main.json language=json}
+
+And \[`mdast-util-to-markdown`] write markdown AST back to markdown file:
+
+::include-code{file=./snapshots/main.md language=markdown}

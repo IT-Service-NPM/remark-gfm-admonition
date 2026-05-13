@@ -105,7 +105,7 @@ and to `mdast-util-to-markdown`
 
 Usage example:
 
-```typescript file=test/examples/01/example.ts
+```typescript
 import type { Root, Nodes } from 'mdast';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { toMarkdown } from 'mdast-util-to-markdown';
@@ -127,12 +127,11 @@ export function mdastToMarkdownUsingExample(ast: Nodes): string {
   });
 };
 
-
 ```
 
 Source files:
 
-```markdown file=test/examples/01/fixtures/main.md
+```markdown
 # Basic Usage
 
 > [!NOTE]
@@ -171,12 +170,11 @@ Source files:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-
 ```
 
 `mdast-util-from-markdown` get markdown AST:
 
-```json file=test/examples/01/snapshots/main.json
+```json
 {
   "type": "root",
   "children": [
@@ -414,7 +412,7 @@ Source files:
 
 And \[`mdast-util-to-markdown`] write markdown AST back to markdown file:
 
-```markdown file=test/examples/01/snapshots/main.md
+```markdown
 # Basic Usage
 
 > [!NOTE]
@@ -449,7 +447,6 @@ And \[`mdast-util-to-markdown`] write markdown AST back to markdown file:
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-
 ```
 
 ## API

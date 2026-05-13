@@ -1,0 +1,24 @@
+# Write GutHub admonitions to markdown
+
+Remark writes broken markdown file with GutHub admonitions.
+
+`@it-service-npm/remark-gfm-admonition`
+extends Remark’s functionality,
+enabling it to read GitHub admonitions from Markdown
+and to write them back to Markdown files.
+
+::include-code{file=./example.ts language=typescript}
+
+Source files:
+
+main.md:
+
+::include-code{file=./fixtures/main.md language=markdown}
+
+Remark output:
+
+::include-code{file=./fixtures/main.md language=markdown}
+
+Remark output without plugin:
+
+::include-code{file=./fixtures/broken.md language=markdown}

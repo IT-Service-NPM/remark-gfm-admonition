@@ -1,0 +1,20 @@
+# Support all GutHub admonition types
+
+Remark writes broken markdown file with GutHub admonitions.
+
+`@it-service-npm/micromark-extension-gfm-admonition`
+extends micromark functionality,
+enabling it to read from source file
+and to write GitHub admonitions to HTML files.
+
+Source files:
+
+::include-code{file=./fixtures/basic.md language=markdown}
+
+::include-code{file=./fixtures/types.md language=markdown}
+
+Output:
+
+::include-code{file=./snapshots/basic.html language=html}
+
+::include-code{file=./snapshots/types.html language=html}

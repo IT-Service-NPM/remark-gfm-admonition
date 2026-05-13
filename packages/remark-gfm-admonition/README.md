@@ -66,7 +66,7 @@ extends Remark’s functionality,
 enabling it to read GitHub admonitions from Markdown
 and to write them back to Markdown files.
 
-```typescript file=test/examples/01/example.ts
+```typescript
 import { remark } from 'remark';
 import { read } from 'to-vfile';
 import type { VFile } from 'vfile';
@@ -80,14 +80,13 @@ export async function remarkUsingExample(
     .use(remarkGithubAdmonitions)
     .process(await read(filePath));
 };
-
 ```
 
 Source files:
 
 main.md:
 
-```markdown file=test/examples/01/fixtures/main.md
+```markdown
 # markdown file with GitHub admonitions
 
 Text before GitHub admonition.
@@ -123,12 +122,11 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```
 
 Remark output:
 
-```markdown file=test/examples/01/fixtures/main.md
+```markdown
 # markdown file with GitHub admonitions
 
 Text before GitHub admonition.
@@ -164,12 +162,11 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```
 
 Remark output without plugin:
 
-```markdown file=test/examples/01/fixtures/broken.md
+```markdown
 # markdown file with GitHub admonitions
 
 Text before GitHub admonition.
@@ -205,7 +202,6 @@ Text.
 >   * list item 2.2
 
 Text after GitHub admonitions.
-
 ```
 
 ## API

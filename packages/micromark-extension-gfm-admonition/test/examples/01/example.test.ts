@@ -4,7 +4,6 @@ import { readFile } from 'node:fs/promises';
 
 import { micromarkUsingExample } from './example.ts';
 
-// eslint-disable-next-line max-len
 await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support GutHub admonitions syntax',
   async (t) => {
     const outputHtml = micromarkUsingExample(
@@ -19,7 +18,6 @@ await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support GutHu
     );
   });
 
-// eslint-disable-next-line max-len
 await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support blockquote syntax',
   async (t) => {
     const outputHtml = micromarkUsingExample(
@@ -34,7 +32,6 @@ await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support block
     );
   });
 
-// eslint-disable-next-line max-len
 await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support all GutHub admonitions types',
   async (t) => {
     const outputHtml = micromarkUsingExample(
@@ -49,7 +46,6 @@ await test('\'@it-service-npm/micromark-extension-gfm-admonition\' support all G
     );
   });
 
-// eslint-disable-next-line max-len
 await test('\'@it-service-npm/micromark-extension-gfm-admonition\' does not tokenize unknown type of GFM admonitions',
   { skip: true },
   async (t) => {
@@ -65,7 +61,6 @@ await test('\'@it-service-npm/micromark-extension-gfm-admonition\' does not toke
     );
   });
 
-// eslint-disable-next-line max-len
 await test('\'@it-service-npm/micromark-extension-gfm-admonition\' does not tokenize broken GitHub admonitions',
   async (t) => {
     const markdown = await readFile(path.resolve(
@@ -81,4 +76,3 @@ await test('\'@it-service-npm/micromark-extension-gfm-admonition\' does not toke
       { serializers: [(data: string) => data] }
     );
   });
-

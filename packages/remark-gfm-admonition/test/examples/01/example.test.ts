@@ -4,7 +4,6 @@ import { remark } from 'remark';
 import { read } from 'to-vfile';
 import { remarkUsingExample } from './example.ts';
 
-// eslint-disable-next-line max-len
 await test('Remark without \'remark-gfm-admonition\' writes broken GutHub admonitions',
   async (t) => {
     const outputFile = await remark()
@@ -18,7 +17,6 @@ await test('Remark without \'remark-gfm-admonition\' writes broken GutHub admoni
     );
   });
 
-// eslint-disable-next-line max-len
 await test('Remark with \'remark-gfm-admonition\' reads and writes GutHub admonitions without changes',
   async (t) => {
     const outputFile = await remarkUsingExample(path.resolve(

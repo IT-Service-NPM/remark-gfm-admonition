@@ -1,4 +1,3 @@
-/* eslint-disable max-statements */
 import type {
   Code, Effects, Extension, State, TokenizeContext, Construct
 } from 'micromark-util-types';

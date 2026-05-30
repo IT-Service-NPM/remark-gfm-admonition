@@ -27,7 +27,7 @@
 	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
 		"@commitlint/cli": "^21.0.1",
-		"@commitlint/config-angular": "^21.0.1",
+		"@commitlint/config-angular": "^21.0.2",
 		"@commitlint/config-conventional": "^21.0.1",
 		"@commitlint/types": "^21.0.1",
 		"@eslint/js": "^10.0.1",

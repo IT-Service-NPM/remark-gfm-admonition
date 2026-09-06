@@ -206,8 +206,8 @@ Text after GitHub admonitions.
 
 ## API
 
-Please, read the [API reference](docs/index.md).
+Please, read the [API reference](docs/index.md).
 
 ## License
 
-[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)
+[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)

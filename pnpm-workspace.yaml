@@ -1,7 +1,8 @@
 # https://pnpm.io/settings
 # https://pnpm.io/pnpm-workspace_yaml
-
 ---
+allowBuilds:
+  esbuild: true
 hoist: false
 packages:
   - packages/*

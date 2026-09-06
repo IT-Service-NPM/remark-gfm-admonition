@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-this-outside-of-class */
 import type { HtmlExtension } from 'micromark-util-types';
 
 /**

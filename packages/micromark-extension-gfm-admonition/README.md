@@ -37,7 +37,7 @@
 
 [build-url]: https://github.com/IT-Service-NPM/remark-gfm-admonition/actions/workflows/ci.yml
 
-[micromark] extensions to support
+[micromark] extensions to support
 [GitHub (GFM) admonitions].
 
 [micromark]: https://github.com/micromark/micromark
@@ -53,9 +53,9 @@ to [micromark].
 ## When to use this
 
 This project is useful if you want to support
-[GitHub (GFM) admonitions] in your markdown.
+[GitHub (GFM) admonitions] in your markdown.
 
-You can use these extensions when you are working with [micromark].
+You can use these extensions when you are working with [micromark].
 
 ## Contents
 
@@ -74,7 +74,7 @@ npm install --save @it-service-npm/micromark-extension-gfm-admonition
 
 ## Syntax
 
-[GitHub (GFM) admonitions] derive from blockquote
+[GitHub (GFM) admonitions] derive from blockquote
 and have a prefix that defines its appearance.
 
 [GitHub (GFM) admonitions] form with the following BNF:
@@ -204,8 +204,8 @@ Output:
 
 ## API
 
-Please, read the [API reference](docs/index.md).
+Please, read the [API reference](docs/index.md).
 
 ## License
 
-[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)
+[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)

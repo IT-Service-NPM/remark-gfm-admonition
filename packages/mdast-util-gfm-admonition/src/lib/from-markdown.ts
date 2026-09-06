@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-this-outside-of-class */
 import type { Extension, Token } from 'mdast-util-from-markdown';
 import '@it-service-npm/micromark-extension-gfm-admonition';
 

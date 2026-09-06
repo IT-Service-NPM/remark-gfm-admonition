@@ -30,7 +30,11 @@
 	},
 	"license": "MIT",
 	"engines": {
-		"node": ">=22.0"
+		"runtime": {
+			"name": "node",
+			"version": ">=24",
+			"onFail": "download"
+		}
 	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
@@ -55,7 +59,7 @@
 		"build:readme": "pnpm run build:readme:examples && pnpm run build:readme:main",
 		"build:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 	},
-	"packageManager": "pnpm@10.30.3",
+	"packageManager": "pnpm@11.5.2",
 	"dependencies": {
 		"@it-service-npm/mdast-util-gfm-admonition": "workspace:^",
 		"@it-service-npm/micromark-extension-gfm-admonition": "workspace:^",
@@ -64,7 +68,7 @@
 	},
 	"devDependencies": {
 		"@types/mdast": "^4.0.4",
-		"@types/node": "^25.9.1",
+		"@types/node": "^26.4.1",
 		"mdast-util-directive": "^3.1.0",
 		"remark": "^15.0.1",
 		"to-vfile": "^8.0.0",

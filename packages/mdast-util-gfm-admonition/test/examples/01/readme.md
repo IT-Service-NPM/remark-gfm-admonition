@@ -1,7 +1,7 @@
 # Read from markdown file and write back all types of GitHub admonitions
 
 This package adds support for
-GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
+GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
 (to support parsing admonitions in markdown into a syntax tree)
 and to `mdast-util-to-markdown`
 (to support serializing admonitions in syntax trees to markdown).

@@ -47,8 +47,8 @@
 ## What is this?
 
 This package contains two extensions to add support for
-[GitHub (GFM) admonitions] syntax to [`mdast`].
-These extensions plug into [`mdast-util-from-markdown`]
+[GitHub (GFM) admonitions] syntax to [`mdast`].
+These extensions plug into [`mdast-util-from-markdown`]
 (to support parsing admonitions in markdown into a syntax tree)
 and [`mdast-util-to-markdown`]
 (to support serializing admonitions in syntax trees to markdown).
@@ -60,20 +60,20 @@ and [`mdast-util-to-markdown`]
 ## When to use this
 
 You can use these extension when you are working with
-[`mdast-util-from-markdown`] and [`mdast-util-to-markdown`] already.
+[`mdast-util-from-markdown`] and [`mdast-util-to-markdown`] already.
 
-When working with [`mdast-util-from-markdown`],
+When working with [`mdast-util-from-markdown`],
 you must combine this package with
 [`@it-service-npm/micromark-extension-gfm-admonition`].
 
 [`@it-service-npm/micromark-extension-gfm-admonition`]: https://github.com/IT-Service-NPM/remark-gfm-admonition/tree/main/packages/micromark-extension-gfm-admonition
 
-When you don’t need a syntax tree, you can use [`micromark`]
+When you don’t need a syntax tree, you can use [`micromark`]
 directly with [`@it-service-npm/micromark-extension-gfm-admonition`].
 
 [`micromark`]: https://github.com/micromark/micromark
 
-All these packages are used in [`@it-service-npm/remark-gfm-admonition`],
+All these packages are used in [`@it-service-npm/remark-gfm-admonition`],
 which focusses on making it easier to transform content
 by abstracting these internal away.
 
@@ -98,7 +98,7 @@ npm install --save @it-service-npm/mdast-util-gfm-admonition
 ### Read from markdown file and write back all types of GitHub admonitions
 
 This package adds support for
-GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
+GitHub (GFM) admonitions syntax to `mdast-util-from-markdown`
 (to support parsing admonitions in markdown into a syntax tree)
 and to `mdast-util-to-markdown`
 (to support serializing admonitions in syntax trees to markdown).
@@ -451,8 +451,8 @@ And \[`mdast-util-to-markdown`] writes markdown AST back to markdown file:
 
 ## API
 
-Please, read the [API reference](docs/index.md).
+Please, read the [API reference](docs/index.md).
 
 ## License
 
-[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)
+[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)

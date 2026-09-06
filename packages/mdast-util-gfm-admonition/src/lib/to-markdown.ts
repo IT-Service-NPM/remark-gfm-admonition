@@ -41,8 +41,8 @@ function handleGfmCallout(
   let value: string = tracker.move(`> [!${node.kind}]\n`);
   value += state.indentLines(
     state.containerFlow(node, tracker.current()),
-    (value: string, line: number, blank: boolean): string =>
-      blank ? '>' : `> ${value}`
+    (value: string, _line: number, isBlank: boolean): string =>
+      isBlank ? '>' : `> ${value}`
   );
   exit();
   return value;

@@ -85,9 +85,8 @@ function tokenize(
       effects.consume(code);
       effects.exit('gfmCalloutPrefixWhiteSpace');
       return typeStart;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   };
 
   /**
@@ -105,9 +104,8 @@ function tokenize(
       effects.enter('gfmCalloutTypeMarker');
       effects.consume(code);
       return typeStartAfter;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   };
 
   /**
@@ -125,9 +123,8 @@ function tokenize(
       effects.exit('gfmCalloutTypeStart');
       effects.enter('gfmCalloutTypeString');
       return typeStringInside;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   };
 
   /**
@@ -145,9 +142,8 @@ function tokenize(
     ) {
       effects.consume(code);
       return typeStringInside;
-    } else {
-      return typeEnd(code);
     }
+    return typeEnd(code);
   };
 
   /**
@@ -172,9 +168,8 @@ function tokenize(
       effects.exit('gfmCalloutType');
       effects.exit('gfmCalloutPrefix');
       return typeEndAfter;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   };
 
   /**
@@ -189,9 +184,8 @@ function tokenize(
     if (markdownLineEnding(code)) {
       effects.consume(code);
       return contentStart;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   };
 
   /**
@@ -241,9 +235,8 @@ function tokenizeContent(
       effects.consume(code);
       effects.exit('gfmCalloutContentMarker');
       return after;
-    } else {
-      return nok(code);
-    };
+    }
+    return nok(code);
   }
 
   /**
@@ -262,10 +255,9 @@ function tokenizeContent(
       effects.exit('gfmCalloutContentPrefixWhitespace');
       effects.exit('gfmCalloutContentPrefix');
       return ok;
-    } else {
-      effects.exit('gfmCalloutContentPrefix');
-      return ok(code);
-    };
+    }
+    effects.exit('gfmCalloutContentPrefix');
+    return ok(code);
   }
 };
 
